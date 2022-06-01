@@ -14,50 +14,13 @@ body{
 
 /* Inicio estilos HEADER */
 
-header{
-    background-color: #fbdb4c;
+.header{
+    background-color: #fbdb4c ;
 }
 
-.navEscritorio{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin:0 2rem;
-}
-
-.navEscritorio div a img{
+.header nav div a img{
     width: 108px;
     height: 108px;
-}
-
-
-
-
-.navEscritorio ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-.navEscritorio ul li{
-    margin:0.5rem;
-    padding: 0.5rem;
-}
-
-.navEscritorio ul li a{
-    text-decoration: none;
-    color: #051629;
-    font-size: 19px;
-}
-
-.navEscritorio ul li a:hover{
-    background: -webkit-linear-gradient(#ad2c10, #618ec5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.navMobile{
-    display: none;
 }
 /* Fin estilos HEADER */
 
@@ -135,24 +98,13 @@ main .section-presentacion{
 
 .menu{
     background-color: #ad2c10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-bottom: 2rem;
 }
-
 .menu div h2{
     font-size: 30px;
     color: #e1dfdc;
-    margin:0.5rem;
     padding: 0.5rem;
 
-}
-
-.menu-galeria{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
 }
 
 .menu div article img{
@@ -412,44 +364,6 @@ footer div ul li, footer div h5, footer div p{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
-    }
-
-    .navEscritorio{
-        display: none;
-    }
-
-    .navMobile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .navMobile div a img{
-        width: 108px;
-        height: 108px;
-    }
-
-    .navMobile ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
-    }
-
-    .navMobile ul li{
-        margin:0.3rem;
-        padding: 0.3rem;
-    }
-
-    .navMobile ul li a{
-        text-decoration: none;
-        color: #051629;
-        font-size: 19px;
-    }
-
-    .navMobile ul li a:hover{
-        color: #ad2c10;
     }
 
     footer{

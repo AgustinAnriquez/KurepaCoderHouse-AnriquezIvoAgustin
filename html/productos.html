@@ -4,101 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Kurepa</title>
 </head>
 <body>
 
     <!-- Inicio HEADER -->
-    <header>
-        <nav class="navEscritorio">
-            <div>
-                <a href="../index.html"><img src="../img/Kurepa_logo.png" alt=""></a>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid row">
+                <a class="col-lg-4 col-8 col-xs-8 col-sm-10" href="../index.html">
+                    <img src="../img/Kurepa_logo.png" alt="">
+                </a>
+                <button class="navbar-toggler col-sm-2 col-4  col-xs-4 justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-8 justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link" href="./puntos-de-venta.html">Puntos de venta</a>
+                    </div>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./sobre-nosotros.html">Sobre nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./puntos-de-venta.html">Puntos de venta</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="navMobile">
-            <div>
-                <a href="../index.html"><img src="../img/Kurepa_logo.png" alt=""></a>
-            </div>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./sobre-nosotros.html">Sobre nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./puntos-de-venta.html">Puntos de venta</a>
-                </li>
-            </ul>
-        </nav>
+          </nav>
     </header>
     <!-- Fin HEADER -->
 
     <!-- Inicio seccion menu -->
         <section class="menu">
-            <div>
+            <div class="text-center">
                 <h2>Menu:</h2>
             </div>
-            <div>
-                <article>
-                    <img src="../img/chipaguazu.jpg" alt="">
-                    <h4>Chipá guazú</h4>
-                    <p>Choclo, productos lácteos, cebolla, huevo y sal</p>
-                </article>
-                <article>
-                    <img src="../img/chipamestizo.jpg" alt="">
-                    <h4>Chipá mestizo</h4>
-                    <p>Almidon de mandioca, harina de maiz, productos lácteos, huevo, anis y sal</p>
-                </article>
-                <article>
-                    <img src="../img/chipasoo.jpg" alt="">
-                    <h4>Chipá So'o</h4>
-                    <p>Almidon de mandioca, harina de maiz, productos lácteos, huevo y sal <b>*Rellenas:</b> carne, cebolla y queso o jamon y queso</p>
-                </article>
-                <article>
-                    <img src="../img/mbeju.jpg" alt="">
-                    <h4>Mbeju precocido tradicional</h4>
-                    <p>Harina de almidón, harina de maiz, productos lácteos, sal <b>Saborizados:</b> Provenzal o picante (contiene aji molido, condimento para pizza y Pimenton) </p>
-                </article>
-                <article>
-                    <img src="../img/sopaparaguaya.jpg" alt="">
-                    <h4>Sopa paraguaya</h4>
-                    <p>Harina de maiz, productos lácteos, cebolla, aceite, huevo y sal</p>
-                </article>
-                <article>
-                    <img src="../img/mbejusaborizado.jpg" alt="">
-                    <h4>Sopa paraguaya tres cebollas</h4>
-                    <p>Harina de maiz, productos lácteos, cebolla comun, cebolla morada, cebolla de verdeo, aceite, huevo y sal</p>
-                </article>
-                <article>
-                    <img src="../img/mbejusaborizado.jpg" alt="">
-                    <h4>Sopa paraguaya cuatro quesos</h4>
-                    <p>Harina de maiz, productos lácteos, cebolla, aceite, sal, huevo, queso pategrás, dambo, roquefort y sardo</p>
-                </article>
+            <div class="container">
+                <div class="row justify-content-center align-self-center container">
+                    <article class="col-4">
+                        <img src="../img/chipaguazu.jpg" alt="">
+                        <h4>Chipá guazú</h4>
+                        <p>Choclo, productos lácteos, cebolla, huevo y sal</p>
+                    </article>
+                    <article class="col-4">
+                        <img src="../img/chipamestizo.jpg" alt="">
+                        <h4>Chipá mestizo</h4>
+                        <p>Almidon de mandioca, harina de maiz, productos lácteos, huevo, anis y sal</p>
+                    </article>
+                    <article class="col-4">
+                        <img src="../img/chipasoo.jpg" alt="">
+                        <h4>Chipá So'o</h4>
+                        <p>Almidon de mandioca, harina de maiz, productos lácteos, huevo y sal <b>*Rellenas:</b> carne, cebolla y queso o jamon y queso</p>
+                    </article>
+                    <article class="col-4">
+                        <img src="../img/mbeju.jpg" alt="">
+                        <h4>Mbeju precocido tradicional</h4>
+                        <p>Harina de almidón, harina de maiz, productos lácteos, sal <b>Saborizados:</b> Provenzal o picante (contiene aji molido, condimento para pizza y Pimenton) </p>
+                    </article>
+                    <article class="col-4">
+                        <img src="../img/sopaparaguaya.jpg" alt="">
+                        <h4>Sopa paraguaya</h4>
+                        <p>Harina de maiz, productos lácteos, cebolla, aceite, huevo y sal</p>
+                    </article>
+                    <article class="col-4">
+                        <img src="../img/mbejusaborizado.jpg" alt="">
+                        <h4>Sopa paraguaya tres cebollas</h4>
+                        <p>Harina de maiz, productos lácteos, cebolla comun, cebolla morada, cebolla de verdeo, aceite, huevo y sal</p>
+                    </article>
+                    <article class="col-4">
+                        <img src="../img/mbejusaborizado.jpg" alt="">
+                        <h4>Sopa paraguaya cuatro quesos</h4>
+                        <p>Harina de maiz, productos lácteos, cebolla, aceite, sal, huevo, queso pategrás, dambo, roquefort y sardo</p>
+                    </article>
+                </div>
             </div>
             
         </section>
