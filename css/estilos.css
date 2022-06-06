@@ -49,28 +49,8 @@ main .section-presentacion{
 .section-presentacion__article__eslogan h1{
     font-size: 36px;
     text-align: center;
-    animation: agrandarTitulo 2s ease-in-out 10s; 
-    animation-iteration-count: infinite;
 }
 
-@keyframes agrandarTitulo{
-    0%{
-        font-size: 36px;
-    }
-    25%{
-        font-size: 38px;
-    }
-    50%{
-        font-size: 40px;
-    }
-    75%{
-        font-size: 42px;
-    }
-    100%{
-        font-size: 44px;
-    }
-
-}
 .section-presentacion__article__eslogan p{
     font-size: 26px;
     text-align: center;
