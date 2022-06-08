@@ -1,0 +1,18 @@
+/* Externos */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+/* Misc */
+@import './misc/normalize';
+
+/* partials */
+@import './partials/header';
+@import './partials/footer';
+
+/* pages */
+@import './pages/contacto';
+@import './pages/home';
+@import './pages/productos';
+@import './pages/puntos-de-ventas';
+@import './pages/sobre-nosotros';
+
+@import './misc/mediaquery';

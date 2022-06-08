@@ -1,0 +1,40 @@
+.seccionFondoTituloContacto{
+    background: url("../img/Imagenparacarousel2.jpg");
+    background-size: cover;
+    text-align: center;
+    height: 400px;
+
+    h2{
+        padding-top: 160px;
+        font-size: 30px;    
+    }
+}
+
+.seccionFormulario{
+    background-color: #e17c2c;
+    article{
+        text-align: center;
+
+        form{
+            div{
+                label{
+                    font-size: 20px;
+                }
+                button{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        h4{
+            font-size: 24px;
+        }
+
+        h6{
+            font-size: 20px; 
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}

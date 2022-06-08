@@ -1,0 +1,107 @@
+main{
+    
+    .section-presentacion{
+        background: url("../img/Imagenparacarousel1.jpg");
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__article__eslogan{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 36px;
+                text-align: center;
+            }
+            p{
+                font-size: 26px;
+                text-align: center;
+            }
+        }
+        &__article__links{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                
+                li{
+                    margin:0.2rem;
+                    padding: 0.2rem;
+
+                    a{
+                        text-decoration: none;
+                        color: #051629; 
+                    }
+                }
+            }
+        }
+    }
+    
+    .section-nosotros{
+        background-color: #618ec5;
+        display: flex;
+        justify-content: center;
+        
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            h3{
+                color: #051629;
+                font-size: 26px;
+                padding: 10px;
+            }
+
+            p{
+                color: #051629;
+                font-size: 18px;
+                padding: 10px;  
+            }
+        }
+        
+    }
+}
+
+.menu{
+    background-color: #ad2c10;
+    padding-bottom: 2rem;
+
+    div{
+
+        h2{
+            font-size: 30px;
+            color: #e1dfdc;
+            padding: 0.5rem;
+        }
+        article{
+
+            img{
+                width: 366.7px;
+                transition: all 0.7s;
+
+                &:hover{
+                    cursor: pointer;
+                    border:5px solid #ad2c10;
+                }
+            }
+
+            h4{
+                padding: 0.8rem;
+                font-size: 22px;
+            }
+
+            p{
+                padding-bottom: 20px;
+                font-size: 18px;
+            }
+        } 
+    }
+}

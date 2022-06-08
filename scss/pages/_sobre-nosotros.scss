@@ -1,0 +1,78 @@
+.mainSobreNosotros{
+    background-color: #e17c2c;
+    display: flex;
+    flex-direction: column;
+}
+.seccionFondoTituloSobreNosotros{
+    background: url("../img/Imagenparacarousel3.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    p{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.seccionesNosotrosyNuestroCompromiso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seccionNosotros{
+    display: flex;
+    align-items: center;
+
+    article{
+        h3{
+            font-size: 28px;
+            text-align: center;
+            margin:0.2rem;
+            padding: 0.2rem;
+        }
+
+        p{
+            font-size: 16px;
+            text-align: center;
+        }
+
+        img{
+            width: 324px;
+            padding: 1rem;
+        }
+        
+    }
+
+}
+
+.seccionNuestroCompromiso{
+    display: flex;
+    align-items: center;
+
+    article{
+        h3{
+            font-size: 28px;
+            text-align: center;
+            margin:0.2rem;
+            padding: 0.2rem;
+        }
+
+        p{
+            font-size: 16px;
+            text-align: center;
+        }
+
+        img{
+            width: 300px;
+            padding: 1rem;
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+@media screen and (max-width: 1160px){
+
+    .menu-galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .menu-galeria{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 670px){
+    .seccionNosotros, .seccionNuestroCompromiso{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 470px){
+
+    .footer-maps{
+        width: 250px;
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    
+    .seccionNosotros article img{
+        width: 233.28px;
+    }
+    
+    .seccionNuestroCompromiso article img{
+        width: 200px;
+    }
+
+}
