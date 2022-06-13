@@ -1,5 +1,5 @@
 .mainPuntosDeVenta{
-    background-color:#e17c2c; 
+    background-color:$col-naranja; 
 }
 
 .seccionUbicaciones{
@@ -10,7 +10,7 @@
     }
 
     article{
-        border: 1px solid #e1dfdc;
+        border: 1px solid $col-blanco;
 
         div{
             img{
@@ -26,7 +26,7 @@
 }
 
 .seccionInvitacion{
-    background-color: #618ec5;
+    background-color: $col-azul;
     text-align: center;
 
     h4{

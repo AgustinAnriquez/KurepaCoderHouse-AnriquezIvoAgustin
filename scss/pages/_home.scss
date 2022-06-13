@@ -35,7 +35,7 @@ main{
 
                     a{
                         text-decoration: none;
-                        color: #051629; 
+                        color: $col-negro; 
                     }
                 }
             }
@@ -43,7 +43,7 @@ main{
     }
     
     .section-nosotros{
-        background-color: #618ec5;
+        background-color: $col-azul;
         display: flex;
         justify-content: center;
         
@@ -55,13 +55,13 @@ main{
             padding: 20px;
 
             h3{
-                color: #051629;
+                color: $col-negro;
                 font-size: 26px;
                 padding: 10px;
             }
 
             p{
-                color: #051629;
+                color: $col-negro;
                 font-size: 18px;
                 padding: 10px;  
             }
@@ -71,14 +71,14 @@ main{
 }
 
 .menu{
-    background-color: #ad2c10;
+    background-color: $col-rojo;
     padding-bottom: 2rem;
 
     div{
 
         h2{
             font-size: 30px;
-            color: #e1dfdc;
+            color: $col-blanco;
             padding: 0.5rem;
         }
         article{
@@ -89,7 +89,7 @@ main{
 
                 &:hover{
                     cursor: pointer;
-                    border:5px solid #ad2c10;
+                    border:5px solid $col-rojo;
                 }
             }
 
