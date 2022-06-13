@@ -1,5 +1,5 @@
 header{
-    background-color: $col-amarillo;
+    background-color: map-get($colores, amarillo);
     nav{
         div{
             a{

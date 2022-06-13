@@ -3,6 +3,7 @@
 
 /* Misc */
 @import './misc/variables';
+@import './misc/mixins';
 @import './misc/normalize';
 
 /* partials */
@@ -16,4 +17,5 @@
 @import './pages/puntos-de-ventas';
 @import './pages/sobre-nosotros';
 
+/* Misc media-querys*/
 @import './misc/mediaquery';

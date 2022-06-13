@@ -1,6 +1,14 @@
-$col-negro: #051629;
-$col-azul:#618ec5;
-$col-rojo:#ad2c10;
-$col-blanco:#e1dfdc;
-$col-amarillo:#fbdb4c;
-$col-naranja:#e17c2c;
+$colores:(
+    negro: #051629,
+    azul:#618ec5,
+    rojo:#ad2c10,
+    blanco:#e1dfdc,
+    amarillo:#fbdb4c,
+    naranja:#e17c2c
+    );
+
+    @each $color, $value in $colores{
+        .#{$color}{
+            color: #{$value};
+        }
+    }

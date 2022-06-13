@@ -1,34 +1,28 @@
 .mainSobreNosotros{
-    background-color: $col-naranja;
-    display: flex;
-    flex-direction: column;
+    background-color: map-get($colores, naranja);
+    @include flex(column, flex-start, flex-start, 0);
 }
 .seccionFondoTituloSobreNosotros{
     background: url("../img/Imagenparacarousel3.jpg");
     background-size: cover;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    @include flex(row, center, center, 0);
 
     h2{
         font-size: 30px;
         text-align: center;
     }
     p{
-        font-size: 30px;
-        text-align: center;
+        @extend h2;
     }
 }
 .seccionesNosotrosyNuestroCompromiso{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center, flex-start, 0);
 }
 
 .seccionNosotros{
-    display: flex;
-    align-items: center;
+    @include flex(row, flex-start, center, 0);
 
     article{
         h3{
@@ -39,8 +33,10 @@
         }
 
         p{
+            @extend h3;
             font-size: 16px;
-            text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
         img{
@@ -53,8 +49,7 @@
 }
 
 .seccionNuestroCompromiso{
-    display: flex;
-    align-items: center;
+    @include flex(row, flex-start, center, 0);
 
     article{
         h3{
@@ -65,8 +60,10 @@
         }
 
         p{
+            @extend h3;
             font-size: 16px;
-            text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
         img{

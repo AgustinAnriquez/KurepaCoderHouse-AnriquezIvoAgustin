@@ -1,5 +1,5 @@
 .mainPuntosDeVenta{
-    background-color:$col-naranja; 
+    background-color:map-get($colores, naranja); 
 }
 
 .seccionUbicaciones{
@@ -10,7 +10,7 @@
     }
 
     article{
-        border: 1px solid $col-blanco;
+        border: 1px solid map-get($colores, blanco);
 
         div{
             img{
@@ -26,7 +26,7 @@
 }
 
 .seccionInvitacion{
-    background-color: $col-azul;
+    background-color: map-get($colores, azul);
     text-align: center;
 
     h4{

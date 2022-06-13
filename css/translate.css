@@ -1,6 +1,24 @@
 /* Externos */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 /* Misc */
+.negro {
+  color: #051629; }
+
+.azul {
+  color: #618ec5; }
+
+.rojo {
+  color: #ad2c10; }
+
+.blanco {
+  color: #e1dfdc; }
+
+.amarillo {
+  color: #fbdb4c; }
+
+.naranja {
+  color: #e17c2c; }
+
 * {
   margin: 0;
   padding: 0;
@@ -30,28 +48,24 @@ header {
 footer {
   background-color: #fbdb4c;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 0;
   padding: 2rem; }
   footer div {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0; }
     footer div ul {
       display: flex;
       list-style: none; }
-      footer div ul li {
+      footer div ul li, footer div ul h5, footer div ul p {
         margin: 0.2rem;
         padding: 0.2rem;
         text-align: center; }
-    footer div h5 {
-      margin: 0.2rem;
-      padding: 0.2rem;
-      text-align: center; }
-    footer div p {
-      margin: 0.2rem;
-      padding: 0.2rem;
-      text-align: center; }
 
 .footer-maps {
   width: 450px;
@@ -63,7 +77,7 @@ footer {
   background-size: cover;
   text-align: center;
   height: 400px; }
-  .seccionFondoTituloContacto h2 {
+  .seccionFondoTituloContacto h2, .seccionFondoTituloContacto .seccionFondoTituloSobreNosotros p, .seccionFondoTituloSobreNosotros .seccionFondoTituloContacto p {
     padding-top: 160px;
     font-size: 30px; }
 
@@ -89,52 +103,58 @@ main .section-presentacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  gap: 0; }
   main .section-presentacion__article__eslogan {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    main .section-presentacion__article__eslogan h1 {
+    align-items: center;
+    gap: 0; }
+    main .section-presentacion__article__eslogan h1, main .section-presentacion__article__eslogan p {
       font-size: 36px;
       text-align: center; }
     main .section-presentacion__article__eslogan p {
-      font-size: 26px;
-      text-align: center; }
+      font-size: 26px; }
   main .section-presentacion__article__links ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
     list-style: none; }
-    main .section-presentacion__article__links ul li {
+    main .section-presentacion__article__links ul li, main .section-presentacion__article__links ul footer div h5, footer div main .section-presentacion__article__links ul h5, main .section-presentacion__article__links ul footer div p, footer div main .section-presentacion__article__links ul p {
       margin: 0.2rem;
       padding: 0.2rem; }
-      main .section-presentacion__article__links ul li a {
+      main .section-presentacion__article__links ul li a, main .section-presentacion__article__links ul footer div h5 a, footer div main .section-presentacion__article__links ul h5 a, main .section-presentacion__article__links ul footer div p a, footer div main .section-presentacion__article__links ul p a {
         text-decoration: none;
         color: #051629; }
 
 main .section-nosotros {
   background-color: #618ec5;
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0; }
   main .section-nosotros article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0;
     padding: 20px; }
-    main .section-nosotros article h3 {
+    main .section-nosotros article h3, main .section-nosotros article p {
       color: #051629;
       font-size: 26px;
       padding: 10px; }
     main .section-nosotros article p {
-      color: #051629;
-      font-size: 18px;
-      padding: 10px; }
+      font-size: 18px; }
 
 .menu {
   background-color: #ad2c10;
   padding-bottom: 2rem; }
-  .menu div h2 {
+  .menu div h2, .menu div .seccionFondoTituloSobreNosotros p, .seccionFondoTituloSobreNosotros .menu div p {
     font-size: 30px;
     color: #e1dfdc;
     padding: 0.5rem; }
@@ -156,7 +176,7 @@ main .section-nosotros {
 
 .seccionUbicaciones {
   text-align: center; }
-  .seccionUbicaciones h2 {
+  .seccionUbicaciones h2, .seccionUbicaciones .seccionFondoTituloSobreNosotros p, .seccionFondoTituloSobreNosotros .seccionUbicaciones p {
     font-size: 30px; }
   .seccionUbicaciones article {
     border: 1px solid #e1dfdc; }
@@ -175,57 +195,71 @@ main .section-nosotros {
 .mainSobreNosotros {
   background-color: #e17c2c;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0; }
 
 .seccionFondoTituloSobreNosotros {
   background: url("../img/Imagenparacarousel3.jpg");
   background-size: cover;
   height: 400px;
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; }
-  .seccionFondoTituloSobreNosotros h2 {
-    font-size: 30px;
-    text-align: center; }
-  .seccionFondoTituloSobreNosotros p {
+  align-items: center;
+  gap: 0; }
+  .seccionFondoTituloSobreNosotros h2, .seccionFondoTituloSobreNosotros p {
     font-size: 30px;
     text-align: center; }
 
 .seccionesNosotrosyNuestroCompromiso {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0; }
 
 .seccionNosotros {
   display: flex;
-  align-items: center; }
-  .seccionNosotros article h3 {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0; }
+  .seccionNosotros article h3, .seccionNosotros main .section-nosotros article p, main .section-nosotros .seccionNosotros article p, .seccionNosotros article p {
     font-size: 28px;
     text-align: center;
     margin: 0.2rem;
     padding: 0.2rem; }
   .seccionNosotros article p {
     font-size: 16px;
-    text-align: center; }
+    margin: 0;
+    padding: 0; }
   .seccionNosotros article img {
     width: 324px;
     padding: 1rem; }
 
 .seccionNuestroCompromiso {
   display: flex;
-  align-items: center; }
-  .seccionNuestroCompromiso article h3 {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0; }
+  .seccionNuestroCompromiso article h3, .seccionNuestroCompromiso main .section-nosotros article p, main .section-nosotros .seccionNuestroCompromiso article p, .seccionNuestroCompromiso article p {
     font-size: 28px;
     text-align: center;
     margin: 0.2rem;
     padding: 0.2rem; }
   .seccionNuestroCompromiso article p {
     font-size: 16px;
-    text-align: center; }
+    margin: 0;
+    padding: 0; }
   .seccionNuestroCompromiso article img {
     width: 300px;
     padding: 1rem; }
 
+/* Misc media-querys*/
 @media screen and (max-width: 1160px) {
   .menu-galeria {
     display: grid;
