@@ -37,7 +37,7 @@
     <!-- Fin HEADER -->
 
     <!-- Inicio MAIN -->
-    <main class="mainContacto">
+    <section class="mainContacto">
 
         <!-- Seccion con fondo con alguna imagen de algun producto y titulo de la seccion -->
         <section class="seccionFondoTituloContacto">
@@ -46,40 +46,40 @@
         <!-- Fin seccion -->
 
         <!-- Seccion formulario de consulta + Informacion con horarios de atencion -->
-        <section class="seccionFormulario">
+        <section class="seccionFormulario row">
 
             <!-- Inicio article con formulario -->
-            <article>
-                <form>
+            <article class="col-6 m-auto p-3">
+                <form >
                     <div>
-                        <label for="nombre">Nombre:</label>
-                        <input id="nombre" type="text">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input id="nombre" type="text" class="form-control">
                     </div>
                     <div>
-                        <label for="apellido">Apellido:</label>
-                        <input id="apellido" type="text">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input id="apellido" type="text" class="form-control">
                     </div>
                     <div>
-                        <label for="mail">Mail:</label>
-                        <input id="mail" type="email">
+                        <label for="mail" class="form-label">Mail</label>
+                        <input id="mail" type="email" class="form-control">
                     </div>
                     <div>
-                        <label for="telefono">Telefono:</label>
-                        <input id="telefono" type="tel">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input id="telefono" type="tel" class="form-control">
                     </div>
                     <div>
-                        <label for="comentario">Comentario:</label>
-                        <textarea id="comentario"></textarea>
+                        <label for="comentario" class="form-label">Comentario</label>
+                        <textarea id="comentario" class="form-control" rows="5"></textarea>
                     </div>
                     <div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="btn btn-primary my-2">Enviar</button>
                     </div>
                 </form>
             </article>
             <!-- Fin article con formulario -->
 
             <!-- Inicio article con horarios de atencion y numero de telefono -->
-            <article>
+            <article class="col-6 m-auto">
                 <h4>Nuestros horarios de atencion:</h4>
                 <h6>Lunes a jueves:</h6>
                 <p>8:30hs a 13hs</p>
@@ -94,7 +94,7 @@
         </section>
         <!-- Fin seccion formulario y horarios de atencion -->
 
-    </main>
+    </section>
     <!-- Fin MAIN -->
 
     <!-- Inicio FOOTER -->
