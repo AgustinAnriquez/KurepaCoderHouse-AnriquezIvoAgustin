@@ -288,6 +288,11 @@ main .section-nosotros {
     width: 250px;
     height: 100px; } }
 
+@media screen and (max-width: 400px) {
+  .menu div article .imagen-de-producto {
+    width: 293px;
+    height: 439px; } }
+
 @media screen and (max-width: 350px) {
   .seccionNosotros article img {
     width: 233.28px; }
