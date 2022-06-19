@@ -260,6 +260,11 @@ main .section-nosotros {
     padding: 1rem; }
 
 /* Misc media-querys*/
+@media screen and (max-width: 1300px) {
+  .maps-puntos-de-venta {
+    width: 500px;
+    height: 350px; } }
+
 @media screen and (max-width: 1160px) {
   .menu-galeria {
     display: grid;
