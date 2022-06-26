@@ -9,15 +9,13 @@ html{
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-principal;
 }
 
-#facebook-icon, #instagram-icon{
-    width: 24px;
-    height: 24px;
+ul{
+    list-style: none;
+    padding: 0%;
 }
-
-#whatsapp-icon{
-    width: 28px;
-    height: 28px;
+a{
+    text-decoration: none;
 }

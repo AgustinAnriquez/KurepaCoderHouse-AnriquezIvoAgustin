@@ -1,6 +1,9 @@
 /* Externos */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-
+@font-face {
+    font-family: 'Brusher';
+    src: url("../fonts/BRUSHER.TTF");
+  };
 /* Misc */
 @import './misc/variables';
 @import './misc/mixins';

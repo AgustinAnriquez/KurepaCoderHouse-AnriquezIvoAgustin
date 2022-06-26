@@ -1,95 +1,83 @@
 main{
-    
-    .section-presentacion{
-        background: url("../img/Imagenparacarousel1.jpg");
-        background-size: cover;
-        height: 400px;
-        @include flex(column, center, center, 0);
-        
-        &__article__eslogan{
-            @include flex(column, center, center, 0);
-            h1{
-                font-size: 36px;
-                text-align: center;
-            }
-            p{
-                @extend h1;
-                font-size: 26px;
-            }
-        }
-        &__article__links{
-            ul{
-                @include flex(row, space-between, flex-start, 0);
-                list-style: none;
-                
-                li{
-                    margin:0.2rem;
-                    padding: 0.2rem;
 
-                    a{
-                        text-decoration: none;
-                        color: map-get($colores, negro); 
-                    }
-                }
+    .contenedorDeGaleria{
+        background-color: map-get($colores, rojo);
+        .galeriaDeInicio{
+            background-color: map-get($colores, rojo);
+            max-width: 1200px;
+            @include grid(repeat(12, 1fr), repeat(3, 1fr), center, center, 1.4rem);
+            &__article1{
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
             }
+            &__article2{
+                grid-column-start: 5;
+                grid-column-end: 9;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            &__article3{
+                grid-column-start: 9;
+                grid-column-end: 13;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            &__article4{
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            &__article5{
+                grid-column-start: 5;
+                grid-column-end: 9;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            &__article6{
+                grid-column-start: 9;
+                grid-column-end: 13;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            &__article7{
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            &__article8{
+                grid-column-start: 5;
+                grid-column-end: 9;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            &__article9{
+                grid-column-start: 9;
+                grid-column-end: 13;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+
+            &__img{
+                width: 100%;
+            }
+
         }
+    }
+
+    .descripcionLocal{
+       background-color: map-get($colores, blanco);
+        &__texto{
+            color: map-get($colores, negro);
+            text-align: center;
+            font-size: map-get($textos, text-semi-large)
+        }
+
     }
     
-    .section-nosotros{
-        background-color: map-get($colores, azul);
-        @include flex(row, center, flex-start, 0);
-        
-        article{
-            @include flex(column, center, center, 0);
-            padding: 20px;
-
-            h3{
-                color:map-get($colores, negro);
-                font-size: 26px;
-                padding: 10px;
-            }
-
-            p{
-                @extend h3;
-                font-size: 18px;
-            }
-        }
-        
-    }
 }
 
-.menu{
-    background-color: map-get($colores, rojo);
-    padding-bottom: 2rem;
 
-    div{
-
-        h2{
-            font-size: 30px;
-            color: map-get($colores, blanco);
-            padding: 0.5rem;
-        }
-        article{
-
-            img{
-                width: 366.7px;
-                transition: all 0.7s;
-
-                &:hover{
-                    cursor: pointer;
-                    border:5px solid map-get($colores, rojo);
-                }
-            }
-
-            h4{
-                padding: 0.8rem;
-                font-size: 22px;
-            }
-
-            p{
-                padding-bottom: 20px;
-                font-size: 18px;
-            }
-        } 
-    }
-}

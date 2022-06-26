@@ -1,36 +1,28 @@
 footer{
-
-    background-color: map-get($colores, amarillo);
-    @include flex(row, space-around, center, 0);
-    padding: 2rem;
-
-    div{
-        @include flex(column, flex-start, center, 0);
-
-        ul{
-            display: flex;
-            list-style: none;
-            
-            li{
-                margin:0.2rem;
-                padding: 0.2rem;
-                text-align: center; 
-            }
+    background-color: map-get($colores, azul);
+    .esloganUbicacionMenu{
+        @include flex(row, space-evenly, center, 0);
+        &__titulo{
+            font-size: map-get($textos, text-semi-large);
+            color: map-get($colores, negro);
         }
-
-        h5{
-            @extend li;
-        }
-
-        p{
-            @extend li;
+        &__texto{
+            font-size: map-get($textos, text-base);
+            color: map-get($colores, azul-secondary);
         }
 
     }
 
-}
-
-.footer-maps{
-    width: 450px;
-    height: 300px;
+    .copyright{
+        @include flex(row, center, flex-end, 0);
+            article{
+                border-top: 2px solid map-get($colores, azul-secondary);
+                p{
+                    font-size: map-get($textos, text-base);
+                    color: map-get($colores, negro);
+                    margin-top: 1em ;
+                    
+                }
+            }
+    }
 }

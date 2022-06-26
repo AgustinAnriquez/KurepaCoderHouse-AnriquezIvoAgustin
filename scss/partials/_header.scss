@@ -1,13 +1,27 @@
 header{
+    .navMobile{
+        display: none;
+    }
     background-color: map-get($colores, amarillo);
-    nav{
-        div{
-            a{
-                img{
-                    width: 108px;
-                    height: 108px;
-                }
-            }
+    .nav-link{
+        color: map-get($colores, negro );
+        font-size: map-get($textos, text-medium );
+        transition: all 0.6s;
+        &:hover{
+            color: map-get($colores, azul-secondary );
+            border-bottom: 2px solid map-get($colores, rojo );
         }
     }
+    .navbar-toggler-icon{
+        font-size: map-get($textos, text-semi-medium );
+    }
+
+    .navDesktop{
+        @include flex(row, space-between, center, 0);
+        ul{
+            margin:0;
+            @include flex(row, space-between, center, 2.4rem);
+        }
+    }
+    
 }

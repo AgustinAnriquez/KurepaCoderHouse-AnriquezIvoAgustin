@@ -1,8 +1,9 @@
 $colores:(
     negro: #051629,
-    azul:#618ec5,
+    azul-secondary:#0057c2,
+    azul:#88a3c4,
     rojo:#ad2c10,
-    blanco:#e1dfdc,
+    blanco:#f8f8f8,
     amarillo:#fbdb4c,
     naranja:#e17c2c
     );
@@ -12,3 +13,23 @@ $colores:(
             color: #{$value};
         }
     }
+
+$spacing-small:2.4rem;
+
+$font-principal: 'Brusher';
+
+$textos:(
+    text-large: 5.2em,
+    text-semi-large:3.5rem,
+    text-medium: 2.8em,
+    text-semi-medium: 2.2em,
+    text-base: 1.8em,
+    text-small:1.2em,
+    );
+    
+    @each $texto, $value in $textos{
+        .#{$texto}{
+             font-size: #{$value};
+        }
+    }
+
