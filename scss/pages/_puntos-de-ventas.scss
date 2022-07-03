@@ -1,36 +1,103 @@
 .mainPuntosDeVenta{
-    background-color:map-get($colores, naranja); 
-}
-
-.seccionUbicaciones{
-    text-align: center;
-
-    h2{
-        font-size: 30px;
+    .seccionImagenEncabezado{
+        img{
+            // opacity: 0.9;
+            width: 100%;
+        }
     }
-
-    article{
-        border: 1px solid map-get($colores, blanco);
-
-        div{
-            
+    .contenederoSeccionUbicaciones{
+        background-color: map-get($colores, rojo);
+        .seccionUbicaciones{
+            @include grid(repeat(12, 1fr), 2fr, center, center, 1rem);
+            &__article1{
+                grid-column-start: 1;
+                grid-column-end: 7;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            &__article2{
+                grid-column-start: 7;
+                grid-column-end: 13;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            &__article3{
+                grid-column-start: 1;
+                grid-column-end: 7;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            &__article4{
+                grid-column-start: 7;
+                grid-column-end: 13;
+                grid-row-start: 2;
+                grid-row-end: 3;  
+            }
+            article{
+                @include flex(column, center, center, 1.4rem);
+                background: linear-gradient(
+                            to bottom,
+                            map-get($colores, rojo) 0%,
+                            map-get($colores, rojo) 30%,
+                            map-get($colores, negro) 30%,
+                            map-get($colores, negro) 100%
+                );
+            }
             img{
-                width: 25.02px;
+                width: 486px;
+                height: 486px;
+            }
+            &__texto{
+                color: map-get($colores, gris);
+                h3{
+                    font-size: map-get($textos, text-semi-large );
+                }
+                ul{
+                    li{
+                        span{
+                            font-size: map-get($textos, text-semi-medium );
+                        }
+                    }
+                }
+                align-self: flex-start;
+                padding: 2rem 7.1rem;
             }
         }
-
     }
-}
-
-.seccionMaps{
-    text-align: center;
-}
-
-.seccionInvitacion{
-    background-color: map-get($colores, azul);
-    text-align: center;
-
-    h4{
-        font-size: 20px;
+    .ContenedorSeccionInvitacion{
+        background: linear-gradient(
+            to bottom,
+            map-get($colores, rojo) 0%,
+            map-get($colores, rojo) 30%,
+            map-get($colores, amarillo) 30%,
+            map-get($colores, amarillo) 80%,
+            map-get($colores, blanco) 80%,
+            map-get($colores, blanco) 100%,
+        );
+        .seccionInvitacion{
+            @include grid(repeat(12, 1fr), repeat(12, 1fr), center, center, 1rem);
+            &__article1{
+                grid-column-start: 1;
+                grid-column-end: 7;
+                grid-row-start: 1;
+                grid-row-end: 7; 
+            }
+            &__article2{
+                grid-column-start: 7;
+                grid-column-end: 13;
+                grid-row-start: 3;
+                grid-row-end: 9;  
+            }
+            &__article3{
+                grid-column-start: 1;
+                grid-column-end: 7;
+                grid-row-start: 7;
+                grid-row-end: 13;  
+            }
+            img{
+                height: 800px;
+            }
+        }
     }
+    
 }

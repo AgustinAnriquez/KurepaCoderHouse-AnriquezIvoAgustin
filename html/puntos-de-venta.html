@@ -16,7 +16,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navMobile mx-4">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="./img/svg/Kurepa_logo.svg" alt="kurepa-logo"></a>
+              <a class="navbar-brand" href="../index.html"><img src="../img/svg/Kurepa_logo.svg" alt="kurepa-logo"></a>
               <button class="navbar-toggler rounded-circle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #e17c2c;">
                 <span class="navbar-toggler-icon" ></span>
               </button>
@@ -44,7 +44,7 @@
           <nav class="navDesktop mx-5">
             <div>
                 <a href="../index.html">
-                    <img src="./img/svg/Kurepa_logo.svg" alt="kurepa_logo.svg">
+                    <img src="../img/svg/Kurepa_logo.svg" alt="kurepa_logo.svg">
                 </a>
             </div>
             <div >
@@ -71,60 +71,128 @@
     <!-- Fin HEADER -->
 
     <!-- Inicio MAIN -->
-    <section class="mainPuntosDeVenta row">
+    <section class="mainPuntosDeVenta">
+
+        <!-- Inicio seccion con imagen del encabezado -->
+        <section class="seccionImagenEncabezado">
+            <img src="../img/imagenesParaPuntosDeVenta/encabezadoPuntosDeVenta.jpeg" alt="kurepa">
+        </section>
+        <!-- Fin seccion con imagen del encabezado -->
 
         <!-- Inicio seccion con ubicaciones de puntos de ventas -->
-        <section class="seccionUbicaciones col-xl-6 m-auto container">
-            <h2 class="py-5">Busca tu punto de venta mas cercano</h2>
-            <article>
-                <h3 class="py-2">Grunen Minimarket Saludable</h3>
-                <div>
-                    <img src="../img/svg/location-pin-svgrepo-com.svg" alt="pin">
-                    <i class="fa-solid fa-map-pin"></i>
-                    <span>Belgrano 251 y Quintana 1083, Corrientes, Argentina</span>
-                </div>
-            </article>
-            <article>
-                <h3 class="py-2">MC Proveedor de alimentos</h3>
-                <div>
-                    <img src="../img/svg/location-pin-svgrepo-com.svg" alt="pin">
-                    <i class="fa-solid fa-map-pin"></i>
-                    <span>Hipolito Yrigoyen 2419, Corrientes, Argentina</span>
-                </div>
-            </article>
-            <article>
-                <h3 class="py-2">Sabores Integrales</h3>
-                <div>
-                    <img src="../img/svg/location-pin-svgrepo-com.svg" alt="pin">
-                    <i class="fa-solid fa-map-pin"></i>
-                    <span>Goya, Argentina</span>
-                </div>
-            </article>
-            <article>
-                <h3 class="py-2">It Market</h3>
-                <div>
-                    <img src="../img/svg/location-pin-svgrepo-com.svg" alt="pin">
-                    <span>Catamarca 1078, Corrientes, Argentina</span>
-                </div>
-            </article>
+        <section class="contenederoSeccionUbicaciones">
+            <section class="seccionUbicaciones container p-5">
+                <article class="seccionUbicaciones__article1">
+                    <div class="seccionUbicaciones__article1__img">
+                        <img src="../img/imagenesParaPuntosDeVenta/grunen.jpg" alt="grunen">
+                    </div>
+                    <div class="seccionUbicaciones__texto">
+                        <h3>Grunen Minimarket Saludable</h3>
+                        <ul>
+                            <li>
+                                <span>Calle: Belgrano 251 y Quintana 1083</span>
+                            </li>
+                            <li>
+                                <span>Ciudad: Corrientes</span>
+                            </li>
+                            <li>
+                                <span>Provincia: Corrientes</span>
+                            </li>
+                            <li>
+                                <span>Pais: Argentina</span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="seccionUbicaciones__article2">
+                    <div class="seccionUbicaciones__article2__img">
+                        <img src="../img/imagenesParaPuntosDeVenta/SaboresIntegrales.jpg" alt="sabores-integrales">
+                    </div>
+                    <div class="seccionUbicaciones__texto">
+                        <h3>Sabores Integrales</h3>
+                        <ul>
+                            <li>
+                                <span>Calle: none</span>
+                            </li>
+                            <li>
+                                <span>Ciudad: Goya</span>
+                            </li>
+                            <li>
+                                <span>Provincia: Corrientes</span>
+                            </li>
+                            <li>
+                                <span>Pais: Argentina</span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="seccionUbicaciones__article3">
+                    <div class="seccionUbicaciones__article3__img">
+                        <img src="../img/imagenesParaPuntosDeVenta/iTMarket.jpg" alt="it-market">
+                    </div>
+                    <div class="seccionUbicaciones__texto">
+                        <h3>It Market 24Hs.</h3>
+                        <ul>
+                            <li>
+                                <span>Calle: Catamarca 1070</span>
+                            </li>
+                            <li>
+                                <span>Ciudad: Corrientes</span>
+                            </li>
+                            <li>
+                                <span>Provincia: Corrientes</span>
+                            </li>
+                            <li>
+                                <span>Pais: Argentina</span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="seccionUbicaciones__article4">
+                    <div class="seccionUbicaciones__article4__img">
+                        <img src="../img/imagenesParaPuntosDeVenta/mcProveedorDeAlimentos.jpg" alt="">
+                    </div>
+                    <div class="seccionUbicaciones__texto">
+                        <h3>Mc Proveedor de Alimentos</h3>
+                        <ul>
+                            <li>
+                                <span>Calle: Hipolito Yrigoyen 2419</span>
+                            </li>
+                            <li>
+                                <span>Ciudad: Corrientes</span>
+                            </li>
+                            <li>
+                                <span>Provincia: Corrientes</span>
+                            </li>
+                            <li>
+                                <span>Pais: Argentina</span>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
         </section>
+        
         <!-- Fin seccion con ubicaciones de puntos de ventas -->
 
-        <!-- Inicio seccion con maps para orientar ubicacion de locales -->
-        <section class="seccionMaps col-xl-6 m-auto container py-5">
-            <iframe class="maps-puntos-de-venta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23811.3923530944!2d-58.81779188482931!3d-27.48218736062253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b79d5bed36b%3A0xfa999f1ef3b40646!2sCorrientes!5e0!3m2!1ses-419!2sar!4v1651673071827!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Seccion con invitacion a contactarse con el local para sumarse como distribuidor de los productos -->
+        <section class="ContenedorSeccionInvitacion p-5"> 
+            <section class="seccionInvitacion container"> 
+                <article class="seccionInvitacion__article1 text-end">
+                    <img src="../img/imagenesParaPuntosDeVenta/imagenPuntosDeVenta1.jpg" alt="kurepa-invitacion">
+                </article>
+                <article class="seccionInvitacion__article2 text-start">
+                    <img src="../img/imagenesParaPuntosDeVenta/imagenPuntosDeVenta2.jpg" alt="kurepa-invitacion">
+                </article>
+                <article class="seccionInvitacion__article3 text-end">
+                    <img src="../img/imagenesParaPuntosDeVenta/imagenPuntosDeVenta3.jpg" alt="kurepa-invitacion">
+                </article>
+            </section>
         </section>
-        <!-- Fin seccion maps -->
-
+        <!-- Fin seccion invitacion -->
     </section>
-    <!-- Fin MAIN -->
 
-    <!-- Seccion con invitacion a contactarse con el local para sumarse como distribuidor de los productos -->
-    <section class="seccionInvitacion row">
-        <h4>Si tenes un local y estas interesado en vender nuestros productos <a href="./contacto.html">contactanos</a></h4>
-        <h4>Si sos gastronomico y tenes ganas de incluir nuestros productos en la carta<a href="./contacto.html">contactanos</a></h4> 
-     </section>
-     <!-- Fin seccion invitacion -->
+    <!-- Fin MAIN -->
 
      <!-- Inicio FOOTER -->
      <footer class="py-5">

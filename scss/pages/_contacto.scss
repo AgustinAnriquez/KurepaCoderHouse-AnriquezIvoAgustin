@@ -1,40 +1,71 @@
-.seccionFondoTituloContacto{
-    background: url("../img/Imagenparacarousel2.jpg");
-    background-size: cover;
-    text-align: center;
-    height: 400px;
-
+.mainContacto{
+    background-color: #FFDA4B;
+    .seccionFondoKurepaYLinks{
+        overflow:hidden;
+        position:relative;
+        &__img{
+            width:100%;
+        }
+        &__p{
+            font-size: map-get($textos, text-large );
+            position: absolute;
+            top: 38%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+        }
+        &__linkFacebook{
+            font-size: map-get($textos, text-large );
+            position: absolute;
+            top: 30%;
+            left: 76%;
+            transform: translate(-50%, -50%);
+        }
+        &__linkInstagram{
+            font-size: map-get($textos, text-large );
+            position: absolute;
+            top: 30%;
+            left: 84%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .contenedorSeccionFormularioyHorarios{
+    background: linear-gradient(
+    to bottom,
+    map-get($colores, amarillo) 0%,
+    map-get($colores, amarillo) 50%,
+    map-get($colores, blanco) 50%,
+    map-get($colores, blanco) 100%);
     h2{
-        padding-top: 160px;
-        font-size: 30px;    
+        font-size: map-get($textos, text-semi-large );
     }
-}
-
-.seccionFormulario{
-    background-color: map-get($colores, naranja);
-    article{
-        text-align: center;
-
+    .seccionFormularioyHorarios{
+        form {
+            padding: 6rem 3rem;
+        }
+        @include flex(row, center, center, 1.4rem);
+        &__label{
+            font-size: map-get($textos, text-medium);
+            color: map-get($colores, gris);
+        }
+        &__input{
+            width: 520px;
+            height: 55px;
+            font-size: map-get($textos, text-medium);
+        }
+        &__textArea{
+            width: 520px;
+            height: 275px;
+            font-size: map-get($textos, text-medium);
+        }
         form{
-            div{
-                label{
-                    font-size: 20px;
-                }
-                button{
-                    font-size: 20px;
-                }
-            }
+            background-color: map-get($colores, negro);
+        }
+        img{
+            width: 580px;
+            height:849.98px;
         }
 
-        h4{
-            font-size: 24px;
-        }
-
-        h6{
-            font-size: 20px; 
-        }
-        p{
-            font-size: 16px;
-        }
     }
+    }
+    
 }

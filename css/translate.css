@@ -26,6 +26,9 @@
 .naranja {
   color: #e17c2c; }
 
+.gris {
+  color: #E1DFDC; }
+
 .text-large {
   font-size: 5.2em; }
 
@@ -118,29 +121,59 @@ footer {
         margin-top: 1em; }
 
 /* pages */
-.seccionFondoTituloContacto {
-  background: url("../img/Imagenparacarousel2.jpg");
-  background-size: cover;
-  text-align: center;
-  height: 400px; }
-  .seccionFondoTituloContacto h2, .seccionFondoTituloContacto .seccionFondoTituloSobreNosotros p, .seccionFondoTituloSobreNosotros .seccionFondoTituloContacto p {
-    padding-top: 160px;
-    font-size: 30px; }
-
-.seccionFormulario {
-  background-color: #e17c2c; }
-  .seccionFormulario article {
-    text-align: center; }
-    .seccionFormulario article form div label {
-      font-size: 20px; }
-    .seccionFormulario article form div button {
-      font-size: 20px; }
-    .seccionFormulario article h4 {
-      font-size: 24px; }
-    .seccionFormulario article h6 {
-      font-size: 20px; }
-    .seccionFormulario article p {
-      font-size: 16px; }
+.mainContacto {
+  background-color: #FFDA4B; }
+  .mainContacto .seccionFondoKurepaYLinks {
+    overflow: hidden;
+    position: relative; }
+    .mainContacto .seccionFondoKurepaYLinks__img {
+      width: 100%; }
+    .mainContacto .seccionFondoKurepaYLinks__p {
+      font-size: 5.2em;
+      position: absolute;
+      top: 38%;
+      left: 80%;
+      transform: translate(-50%, -50%); }
+    .mainContacto .seccionFondoKurepaYLinks__linkFacebook {
+      font-size: 5.2em;
+      position: absolute;
+      top: 30%;
+      left: 76%;
+      transform: translate(-50%, -50%); }
+    .mainContacto .seccionFondoKurepaYLinks__linkInstagram {
+      font-size: 5.2em;
+      position: absolute;
+      top: 30%;
+      left: 84%;
+      transform: translate(-50%, -50%); }
+  .mainContacto .contenedorSeccionFormularioyHorarios {
+    background: linear-gradient(to bottom, #fbdb4c 0%, #fbdb4c 50%, #f8f8f8 50%, #f8f8f8 100%); }
+    .mainContacto .contenedorSeccionFormularioyHorarios h2 {
+      font-size: 3.5rem; }
+    .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1.4rem; }
+      .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios form {
+        padding: 6rem 3rem; }
+      .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios__label {
+        font-size: 2.8em;
+        color: #E1DFDC; }
+      .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios__input {
+        width: 520px;
+        height: 55px;
+        font-size: 2.8em; }
+      .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios__textArea {
+        width: 520px;
+        height: 275px;
+        font-size: 2.8em; }
+      .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios form {
+        background-color: #051629; }
+      .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios img {
+        width: 580px;
+        height: 849.98px; }
 
 main .contenedorDeGaleria {
   background-color: #ad2c10; }
@@ -208,102 +241,232 @@ main .descripcionLocal {
     text-align: center;
     font-size: 3.5rem; }
 
-.mainPuntosDeVenta {
-  background-color: #e17c2c; }
+.mainPuntosDeVenta .seccionImagenEncabezado img {
+  width: 100%; }
 
-.seccionUbicaciones {
-  text-align: center; }
-  .seccionUbicaciones h2, .seccionUbicaciones .seccionFondoTituloSobreNosotros p, .seccionFondoTituloSobreNosotros .seccionUbicaciones p {
-    font-size: 30px; }
-  .seccionUbicaciones article {
-    border: 1px solid #f8f8f8; }
-    .seccionUbicaciones article div img {
-      width: 25.02px; }
+.mainPuntosDeVenta .contenederoSeccionUbicaciones {
+  background-color: #ad2c10; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2fr;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article1 {
+      grid-column-start: 1;
+      grid-column-end: 7;
+      grid-row-start: 1;
+      grid-row-end: 1; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article2 {
+      grid-column-start: 7;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      grid-row-end: 1; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article3 {
+      grid-column-start: 1;
+      grid-column-end: 7;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article4 {
+      grid-column-start: 7;
+      grid-column-end: 13;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.4rem;
+      background: linear-gradient(to bottom, #ad2c10 0%, #ad2c10 30%, #051629 30%, #051629 100%); }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones img {
+      width: 486px;
+      height: 486px; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__texto {
+      color: #E1DFDC;
+      align-self: flex-start;
+      padding: 2rem 7.1rem; }
+      .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__texto h3 {
+        font-size: 3.5rem; }
+      .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__texto ul li span {
+        font-size: 2.2em; }
 
-.seccionMaps {
-  text-align: center; }
-
-.seccionInvitacion {
-  background-color: #88a3c4;
-  text-align: center; }
-  .seccionInvitacion h4 {
-    font-size: 20px; }
+.mainPuntosDeVenta .ContenedorSeccionInvitacion {
+  background: linear-gradient(to bottom, #ad2c10 0%, #ad2c10 30%, #fbdb4c 30%, #fbdb4c 80%, #f8f8f8 80%, #f8f8f8 100%); }
+  .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 1rem; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion__article1 {
+      grid-column-start: 1;
+      grid-column-end: 7;
+      grid-row-start: 1;
+      grid-row-end: 7; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion__article2 {
+      grid-column-start: 7;
+      grid-column-end: 13;
+      grid-row-start: 3;
+      grid-row-end: 9; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion__article3 {
+      grid-column-start: 1;
+      grid-column-end: 7;
+      grid-row-start: 7;
+      grid-row-end: 13; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion img {
+      height: 800px; }
 
 .mainSobreNosotros {
-  background-color: #e17c2c;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0; }
-
-.seccionFondoTituloSobreNosotros {
-  background: url("../img/Imagenparacarousel3.jpg");
-  background-size: cover;
-  height: 400px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0; }
-  .seccionFondoTituloSobreNosotros h2, .seccionFondoTituloSobreNosotros p {
-    font-size: 30px;
-    text-align: center; }
-
-.seccionesNosotrosyNuestroCompromiso {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0; }
-
-.seccionNosotros {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0; }
-  .seccionNosotros article h3, .seccionNosotros article p {
-    font-size: 28px;
-    text-align: center;
-    margin: 0.2rem;
-    padding: 0.2rem; }
-  .seccionNosotros article p {
-    font-size: 16px;
-    margin: 0;
-    padding: 0; }
-  .seccionNosotros article img {
-    width: 324px;
-    padding: 1rem; }
-
-.seccionNuestroCompromiso {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0; }
-  .seccionNuestroCompromiso article h3, .seccionNuestroCompromiso article p {
-    font-size: 28px;
-    text-align: center;
-    margin: 0.2rem;
-    padding: 0.2rem; }
-  .seccionNuestroCompromiso article p {
-    font-size: 16px;
-    margin: 0;
-    padding: 0; }
-  .seccionNuestroCompromiso article img {
-    width: 300px;
-    padding: 1rem; }
+  background-color: #fbdb4c; }
+  .mainSobreNosotros .galeriaElaboracionChipaSoo {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem; }
+    .mainSobreNosotros .galeriaElaboracionChipaSoo__article1 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 1; }
+    .mainSobreNosotros .galeriaElaboracionChipaSoo__article2 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 1; }
+    .mainSobreNosotros .galeriaElaboracionChipaSoo__article3 {
+      grid-column-start: 9;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      grid-row-end: 1; }
+    .mainSobreNosotros .galeriaElaboracionChipaSoo__img {
+      width: 100%;
+      height: 100%;
+      min-height: 200px;
+      object-fit: cover; }
+  .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso {
+    background-color: #ad2c10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem; }
+    .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros, .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNuestroCompromiso {
+      padding: 0%;
+      background-color: #051629;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0; }
+      .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros .seccionNosotros__titulo, .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNuestroCompromiso .seccionNosotros__titulo {
+        font-size: 5.2em;
+        color: #E1DFDC;
+        text-align: center; }
+      .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros .seccionNosotros__parrafo, .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNuestroCompromiso .seccionNosotros__parrafo {
+        font-size: 3.5rem;
+        color: #E1DFDC; }
+  .mainSobreNosotros .contenedorDeGaleriaLogo {
+    background: linear-gradient(to bottom, #ad2c10 0%, #ad2c10 50%, #f8f8f8 50%, #f8f8f8 100%); }
+    .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-content: center;
+      align-content: center;
+      gap: 1.4rem; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article2 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 2; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article3 {
+        grid-column-start: 9;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 2; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article5 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 3; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article6 {
+        grid-column-start: 9;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 3; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article7 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article8 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 4; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__article9 {
+        grid-column-start: 9;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 4; }
+      .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo__img {
+        width: 100%; }
 
 /* Misc media-querys*/
-@media screen and (max-width: 1300px) {
-  .maps-puntos-de-venta {
-    width: 500px;
-    height: 350px; } }
+@media screen and (max-width: 1400px) {
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones img {
+    width: 386px;
+    height: 386px; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__texto {
+    padding: 2rem 3.8rem; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article2 h3 {
+    padding: 2rem 0; } }
+
+@media screen and (max-width: 1200px) {
+  .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros, .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNuestroCompromiso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
+    .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros__img {
+      width: 100%; }
+  .mainContacto .seccionFondoKurepaYLinks__p {
+    top: 35%;
+    left: 77%; }
+  .mainContacto .seccionFondoKurepaYLinks__linkFacebook {
+    top: 25%;
+    left: 72%; }
+  .mainContacto .seccionFondoKurepaYLinks__linkInstagram {
+    top: 25%;
+    left: 82%; }
+  .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; } }
 
 @media screen and (max-width: 1100px) {
   main .contenedorDeGaleria .galeriaDeInicio {
+    gap: 0.8rem; }
+  .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo {
     gap: 0.8rem; } }
 
 @media screen and (max-width: 993px) {
@@ -312,11 +475,69 @@ main .descripcionLocal {
   header .navMobile {
     display: block; }
   header .nav-link {
-    font-size: 2.2em; } }
+    font-size: 2.2em; }
+  .mainContacto .seccionFondoKurepaYLinks__p {
+    top: 35%;
+    left: 77%; }
+  .mainContacto .seccionFondoKurepaYLinks__linkFacebook {
+    top: 25%;
+    left: 70%; }
+  .mainContacto .seccionFondoKurepaYLinks__linkInstagram {
+    top: 25%;
+    left: 84%; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4fr;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article1 {
+      grid-column-start: 3;
+      grid-column-end: 11;
+      grid-row-start: 1;
+      grid-row-end: 1; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article2 {
+      grid-column-start: 3;
+      grid-column-end: 11;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article3 {
+      grid-column-start: 3;
+      grid-column-end: 11;
+      grid-row-start: 4;
+      grid-row-end: 5; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article4 {
+      grid-column-start: 3;
+      grid-column-end: 11;
+      grid-row-start: 6;
+      grid-row-end: 7; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__texto {
+      padding: 2rem 2.7rem; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones h3 {
+      padding: 1rem 0; }
+  .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion img {
+    height: 600px; } }
 
 @media screen and (max-width: 800px) {
   main .descripcionLocal__texto {
     font-size: 2.8em; }
+  .mainSobreNosotros .galeriaElaboracionChipaSoo {
+    gap: 0.2rem; }
+  .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros .seccionNosotros__titulo, .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNuestroCompromiso .seccionNosotros__titulo {
+    font-size: 3.5rem; }
+  .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros .seccionNosotros__parrafo, .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNuestroCompromiso .seccionNosotros__parrafo {
+    font-size: 2.8em; }
+  .mainContacto .seccionFondoKurepaYLinks__p {
+    font-size: 3.5rem; }
+  .mainContacto .seccionFondoKurepaYLinks__linkFacebook {
+    width: 65px;
+    top: 25%;
+    left: 72%; }
+  .mainContacto .seccionFondoKurepaYLinks__linkInstagram {
+    width: 65px;
+    top: 25%;
+    left: 82%; }
   footer .esloganUbicacionMenu {
     display: flex;
     flex-direction: column;
@@ -328,20 +549,128 @@ main .descripcionLocal {
     footer .esloganUbicacionMenu li {
       text-align: center; } }
 
+@media screen and (max-width: 768px) {
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article1 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article2 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article3 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 5; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__article4 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 7; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__texto {
+    padding: 0 4.4rem; }
+  .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 1rem; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion__article1 {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      grid-row-end: 5; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion__article2 {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 5;
+      grid-row-end: 9; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion__article3 {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 9;
+      grid-row-end: 13; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion article {
+      text-align: center !important; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion img {
+      height: 700px; } }
+
 @media screen and (max-width: 750px) {
   main .contenedorDeGaleria .galeriaDeInicio {
-    gap: 0.4rem; } }
-
-@media screen and (max-width: 670px) {
-  .seccionNosotros, .seccionNuestroCompromiso {
-    flex-direction: column; } }
+    gap: 0.4rem; }
+  .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo {
+    gap: 0.4rem; }
+  .mainContacto .seccionFondoKurepaYLinks__linkFacebook {
+    width: 65px;
+    top: 25%;
+    left: 70%; }
+  .mainContacto .seccionFondoKurepaYLinks__linkInstagram {
+    width: 65px;
+    top: 25%;
+    left: 83%; }
+  .mainContacto .contenedorSeccionFormularioyHorarios h2 {
+    font-size: 2.8em; }
+  .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios__label {
+    font-size: 2.2em; }
+  .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios__input {
+    width: 300px;
+    height: 30px; }
+  .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios__textArea {
+    width: 300px;
+    height: 170px; }
+  .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios img {
+    width: 360px;
+    height: 540px; } }
 
 @media screen and (max-width: 500px) {
   main .contenedorDeGaleria .galeriaDeInicio {
-    gap: 0.1rem; } }
+    gap: 0.1rem; }
+  .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros .seccionNosotros__titulo, .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNuestroCompromiso .seccionNosotros__titulo {
+    font-size: 2.8em; }
+  .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNosotros .seccionNosotros__parrafo, .mainSobreNosotros .seccionesNosotrosyNuestroCompromiso .seccionNuestroCompromiso .seccionNosotros__parrafo {
+    font-size: 2.2em; }
+  .mainSobreNosotros .contenedorDeGaleriaLogo .galeriaLogo {
+    gap: 0.1rem; }
+  .mainContacto .seccionFondoKurepaYLinks__p {
+    font-size: 2.8em; }
+  .mainContacto .seccionFondoKurepaYLinks__linkFacebook {
+    width: 45px; }
+  .mainContacto .seccionFondoKurepaYLinks__linkInstagram {
+    width: 45px; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones img {
+    width: 286px;
+    height: 286px; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__texto {
+    padding: 0;
+    text-align: center;
+    margin: auto; }
+    .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones__texto h3 {
+      font-size: 2.8em; }
+  .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion img {
+    height: 550px; } }
 
-@media screen and (max-width: 350px) {
-  .seccionNosotros article img {
-    width: 233.28px; }
-  .seccionNuestroCompromiso article img {
-    width: 200px; } }
+@media screen and (max-width: 380px) {
+  .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios__input {
+    width: 200px;
+    height: 20px; }
+  .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios__textArea {
+    width: 200px;
+    height: 100px; }
+  .mainContacto .contenedorSeccionFormularioyHorarios .seccionFormularioyHorarios img {
+    width: 260px;
+    height: 430px; }
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones img {
+    width: 230px;
+    height: 230px; }
+  .mainPuntosDeVenta .ContenedorSeccionInvitacion {
+    padding: 10px !important; }
+    .mainPuntosDeVenta .ContenedorSeccionInvitacion .seccionInvitacion img {
+      height: 400px; } }
+
+@media screen and (max-width: 300px) {
+  .mainPuntosDeVenta .contenederoSeccionUbicaciones .seccionUbicaciones {
+    padding: 1rem !important; } }

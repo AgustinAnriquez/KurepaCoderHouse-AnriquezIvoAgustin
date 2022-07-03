@@ -5,7 +5,8 @@ $colores:(
     rojo:#ad2c10,
     blanco:#f8f8f8,
     amarillo:#fbdb4c,
-    naranja:#e17c2c
+    naranja:#e17c2c,
+    gris:#E1DFDC,
     );
 
     @each $color, $value in $colores{

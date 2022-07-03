@@ -1,13 +1,68 @@
-@media screen and (max-width: 1300px){
 
-    .maps-puntos-de-venta{
-        width: 500px;
-        height: 350px;
+@media screen and (max-width: 1400px){
+    .mainPuntosDeVenta{
+        .contenederoSeccionUbicaciones{
+            .seccionUbicaciones{
+                img{
+                    width: 386px;
+                    height: 386px;
+                }
+                &__texto{
+                    padding: 2rem 3.8rem;
+                }
+                &__article2{
+                    h3{
+                        padding: 2rem 0;
+                    }
+                }
+            }
+        }
     }
-    
 }
 
+@media screen and (max-width: 1200px){
+    //inicio media query sobre-nosotros
+    .mainSobreNosotros{
+        .seccionesNosotrosyNuestroCompromiso{
+            .seccionNosotros{
+                @include flex(column, center, center, 0);
+                &__img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    //fin media query sobre-nosotros
+
+    // inicio media query contacto
+    .mainContacto{
+        .seccionFondoKurepaYLinks{
+            &__p{
+                top: 35%;
+                left: 77%;
+            }
+            &__linkFacebook{
+                top: 25%;
+                left: 72%;
+            }
+            &__linkInstagram{
+                top: 25%;
+                left: 82%;
+            }
+        }
+        .contenedorSeccionFormularioyHorarios{
+            .seccionFormularioyHorarios{
+                @include flex(column, center, center, 1rem);
+            }
+        }
+    }
+    // Fin media query contacto
+     
+}
+
+
 @media screen and (max-width: 1100px){
+    //inicio media query home
     main{
         .contenedorDeGaleria{
             .galeriaDeInicio{
@@ -15,10 +70,21 @@
             }
         }   
     }
+    //fin media query home
+    //inicio media query sobre-nosotros
+    .mainSobreNosotros{
+        .contenedorDeGaleriaLogo{
+            .galeriaLogo{
+                gap:0.8rem;
+            }
+        }
+    }
+    //fin media query sobre-nosotros
      
 }
 
 @media screen and (max-width: 993px){
+    //inicio media query header
     header{
         .navDesktop{
             display: none;
@@ -30,10 +96,76 @@
             font-size: map-get($textos, text-semi-medium );
         }
     }
-     
+    //fin media query header
+    // inicio media query contacto
+    .mainContacto{
+        .seccionFondoKurepaYLinks{
+            &__p{
+                top: 35%;
+                left: 77%;
+            }
+            &__linkFacebook{
+                top: 25%;
+                left: 70%;
+            }
+            &__linkInstagram{
+                top: 25%;
+                left: 84%;
+            }
+        }
+    }
+    // Fin media query contacto  
+    //Inicio media query puntos de venta
+    .mainPuntosDeVenta{
+        .contenederoSeccionUbicaciones{
+            .seccionUbicaciones{
+            @include grid(repeat(12, 1fr), 4fr, center, center, 1rem);
+            &__article1{
+                grid-column-start: 3;
+                grid-column-end: 11;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            &__article2{
+                grid-column-start: 3;
+                grid-column-end: 11;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            &__article3{
+                grid-column-start: 3;
+                grid-column-end: 11;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+            &__article4{
+                grid-column-start: 3;
+                grid-column-end: 11;
+                grid-row-start: 6;
+                grid-row-end: 7;  
+            }
+            &__texto{
+                padding: 2rem 2.7rem;
+            }
+            h3{
+                padding:1rem 0;
+            }
+            }
+        }
+        .ContenedorSeccionInvitacion{
+            .seccionInvitacion{
+                img{
+                    height: 600px;
+                }
+            }
+        }
+    }
+    //Fin media query puntos de venta   
+
 }
 
 @media screen and (max-width:800px){
+    //inicio media query home
     main{
         .descripcionLocal{
             &__texto{
@@ -41,6 +173,47 @@
             }
         }
     }
+    // Fin media query home
+
+    //inicio media query sobre-nosotros
+    .mainSobreNosotros{
+        .galeriaElaboracionChipaSoo{
+            gap: 0.2rem;
+        }
+        .seccionesNosotrosyNuestroCompromiso{
+            .seccionNosotros{
+                .seccionNosotros__titulo{
+                    font-size: map-get($textos, text-semi-large );
+                }
+                .seccionNosotros__parrafo{
+                    font-size: map-get($textos, text-medium );
+                }
+            }
+        }
+    }
+    //fin media query sobre-nosotros
+
+    // inicio media query contacto
+    .mainContacto{
+        .seccionFondoKurepaYLinks{
+            &__p{
+                font-size: map-get($textos, text-semi-large );
+            }
+            &__linkFacebook{
+                width: 65px;
+                top: 25%;
+                left: 72%;
+            }
+            &__linkInstagram{
+                width: 65px;
+                top: 25%;
+                left: 82%;
+            }
+        }
+    }
+    // Fin media query contacto
+
+    //inicio media query footer
     footer{
         .esloganUbicacionMenu{
             @include flex(column, center, center, 0);
@@ -53,9 +226,78 @@
         }
 
     }
+    //fin media query footer
+}
+
+@media screen and (max-width: 768px){
+    //Inicio media query puntos de venta
+    .mainPuntosDeVenta{
+        .contenederoSeccionUbicaciones{
+            .seccionUbicaciones{
+                &__article1{
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                    grid-row-start: 1;
+                    grid-row-end: 1;
+                }
+                &__article2{
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+                &__article3{
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                    grid-row-start: 4;
+                    grid-row-end: 5;
+                }
+                &__article4{
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                    grid-row-start: 6;
+                    grid-row-end: 7;  
+                }
+                 &__texto{
+                     padding: 0 4.4rem;
+                 }
+            }
+        }
+        .ContenedorSeccionInvitacion{
+            .seccionInvitacion{
+                @include grid(repeat(12, 1fr), repeat(12, 1fr), center, center, 1rem);
+                &__article1{
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                    grid-row-start: 1;
+                    grid-row-end: 5; 
+                }
+                &__article2{
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                    grid-row-start: 5;
+                    grid-row-end: 9;  
+                }
+                &__article3{
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                    grid-row-start: 9;
+                    grid-row-end: 13;  
+                }
+                article{
+                    text-align: center!important;
+                }
+                img{
+                    height: 700px;
+                }
+            }
+        }
+    }
+    //Fin media query puntos de venta   
 }
 
 @media screen and (max-width: 750px){
+    // inicio media query home
     main{
         .contenedorDeGaleria{
             .galeriaDeInicio{
@@ -63,16 +305,62 @@
             }
         }   
     }
+    // fin media query home
+    //inicio media query sobre-nosotros
+    .mainSobreNosotros{
+        .contenedorDeGaleriaLogo{
+            .galeriaLogo{
+                gap:0.4rem;
+            }
+        }
+    }
+    //fin media query sobre-nosotros
+    // inicio media query contacto
+    .mainContacto{
+        .seccionFondoKurepaYLinks{
+            &__linkFacebook{
+                width: 65px;
+                top: 25%;
+                left: 70%;
+            }
+            &__linkInstagram{
+                width: 65px;
+                top: 25%;
+                left: 83%;
+            }
+        }
+        .contenedorSeccionFormularioyHorarios{
+            h2{
+                font-size: map-get($textos, text-medium );
+            }
+            .seccionFormularioyHorarios{
+                &__label{
+                    font-size: map-get($textos, text-semi-medium);
+                }
+                &__input{
+                    width: 300px;
+                    height: 30px;
+                }
+                &__textArea{
+                    width: 300px;
+                    height: 170px;
+                }
+                img{
+                    width: 360px;
+                    height:540px;
+                }
+            }
+        }
+        
+    }
+    // Fin media query contacto
         
 }
 
-@media screen and (max-width: 670px){
-    .seccionNosotros, .seccionNuestroCompromiso{
-        flex-direction: column;
-    }
-}
+
 
 @media screen and (max-width: 500px){
+    // inicio media query home
     main{
         .contenedorDeGaleria{
             .galeriaDeInicio{
@@ -80,16 +368,137 @@
             }
         }   
     }
+    // fin media query home
+    //inicio media query sobre-nosotros
+    .mainSobreNosotros{
+        .seccionesNosotrosyNuestroCompromiso{
+            .seccionNosotros{
+                .seccionNosotros__titulo{
+                    font-size: map-get($textos, text-medium );
+                }
+                .seccionNosotros__parrafo{
+                    font-size: map-get($textos, text-semi-medium );
+                }
+            }
+        }
+        
+        
+        .contenedorDeGaleriaLogo{
+            .galeriaLogo{
+                gap:0.1rem;
+            }
+        }
+        
+    }
+    //fin media query sobre-nosotros
+    // inicio media query contacto
+    .mainContacto{
+        .seccionFondoKurepaYLinks{
+            &__p{
+                font-size: map-get($textos, text-medium )
+            }
+            &__linkFacebook{
+                width: 45px;
+            }
+            &__linkInstagram{
+                width: 45px;
+            }
+        }
+    }
+    // Fin media query contacto
+     //Inicio media query puntos de venta
+     .mainPuntosDeVenta{
+        .contenederoSeccionUbicaciones{
+            .seccionUbicaciones{
+                 img{
+                    width: 286px;
+                    height: 286px;
+                }
+                &__texto{
+                    h3{
+                        font-size: map-get($textos, text-medium );
+                    }
+                    ul{
+                        li{
+                            span{
+                                font-size: map-get($textos, text-semi-base );
+                            }
+                        }
+                    }
+                    padding: 0;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+        .ContenedorSeccionInvitacion{
+            .seccionInvitacion{
+                img{
+                    height: 550px;
+                }
+            }
+        }
+    }
+    //Fin media query puntos de venta  
 }
 
-@media screen and (max-width: 350px){
-    
-    .seccionNosotros article img{
-        width: 233.28px;
+@media screen and (max-width: 380px){
+    // inicio media query contacto
+    .mainContacto{
+        .contenedorSeccionFormularioyHorarios{
+            .seccionFormularioyHorarios{
+                &__input{
+                    width: 200px;
+                    height: 20px;
+                }
+                &__textArea{
+                    width: 200px;
+                    height: 100px;
+                }
+                img{
+                    width: 260px;
+                    height:430px;
+                }
+            }
+        }
+        
     }
-    
-    .seccionNuestroCompromiso article img{
-        width: 200px;
+    // Fin media query contacto
+    //Inicio media query puntos de venta
+    .mainPuntosDeVenta{
+        .contenederoSeccionUbicaciones{
+            .seccionUbicaciones{
+                 img{
+                    width: 230px;
+                    height: 230px;
+                }
+            }
+        }
+        .ContenedorSeccionInvitacion{
+            padding: 10px !important;
+            .seccionInvitacion{
+                img{
+                    height: 400px;
+                }
+            }
+        }
     }
+    //Fin media query puntos de venta  
+    
+   
 
 }
+
+@media screen and (max-width: 300px){
+     //Inicio media query puntos de venta
+     .mainPuntosDeVenta{
+        .contenederoSeccionUbicaciones{
+            .seccionUbicaciones{
+                padding: 1rem !important;
+            }
+        }
+    }
+    //Fin media query puntos de venta  
+}
+
+

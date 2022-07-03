@@ -16,7 +16,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navMobile mx-4">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="./img/svg/Kurepa_logo.svg" alt="kurepa-logo"></a>
+              <a class="navbar-brand" href="../index.html"><img src="../img/svg/Kurepa_logo.svg" alt="kurepa-logo"></a>
               <button class="navbar-toggler rounded-circle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #e17c2c;">
                 <span class="navbar-toggler-icon" ></span>
               </button>
@@ -44,7 +44,7 @@
           <nav class="navDesktop mx-5">
             <div>
                 <a href="../index.html">
-                    <img src="./img/svg/Kurepa_logo.svg" alt="kurepa_logo.svg">
+                    <img src="../img/svg/Kurepa_logo.svg" alt="kurepa_logo.svg">
                 </a>
             </div>
             <div >
@@ -71,60 +71,56 @@
     <!-- Fin HEADER -->
 
     <!-- Inicio MAIN -->
-    <section class="mainContacto">
+    <section class="mainContacto" >
 
-        <!-- Seccion con fondo con alguna imagen de algun producto y titulo de la seccion -->
-        <section class="seccionFondoTituloContacto row">
-            <h2>¿Tienes alguna pregunta?</h2> 
+        <!-- Seccion con fondo y links a redes sociales -->
+        <section class="container seccionFondoKurepaYLinks">
+            <img class="seccionFondoKurepaYLinks__img" src="../img/imagenesParaContacto/fondoKurepa.jpg" alt="kurepa-fondo">
+            <p class="seccionFondoKurepaYLinks__p">Kurepa_cocina</p>
+            <a href="https://www.facebook.com/KurepaCocina"><img class="seccionFondoKurepaYLinks__linkFacebook" src="../img/svg/facebook.svg" alt="facebook"></a>
+            <a href="#"><img class="seccionFondoKurepaYLinks__linkInstagram" src="../img/svg/instagram.svg" alt="facebook"></a>
         </section>
         <!-- Fin seccion -->
 
         <!-- Seccion formulario de consulta + Informacion con horarios de atencion -->
-        <section class="seccionFormulario row">
+        <section class="contenedorSeccionFormularioyHorarios p-5">
+          <h2 class="text-center p-4">Tienes alguna pregunta?</h2>
+          <section class="seccionFormularioyHorarios container">
 
-            <!-- Inicio article con formulario -->
-            
-                <article class="col-md-6 p-4">
-                    <form >
-                        <div>
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input id="nombre" type="text" class="form-control">
-                        </div>
-                        <div>
-                            <label for="apellido" class="form-label">Apellido</label>
-                            <input id="apellido" type="text" class="form-control">
-                        </div>
-                        <div>
-                            <label for="mail" class="form-label">Mail</label>
-                            <input id="mail" type="email" class="form-control">
-                        </div>
-                        <div>
-                            <label for="telefono" class="form-label">Telefono</label>
-                            <input id="telefono" type="tel" class="form-control">
-                        </div>
-                        <div>
-                            <label for="comentario" class="form-label">Comentario</label>
-                            <textarea id="comentario" class="form-control" rows="5"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary my-2">Enviar</button>
-                        </div>
-                    </form>
-                </article>
-            <!-- Fin article con formulario -->
+              <!-- Inicio article con formulario -->
+              <article>
+                <form >
+                    <div >
+                      <label class="form-label seccionFormularioyHorarios__label">Nombre</label>
+                      <input class="form-control seccionFormularioyHorarios__input" type="text" size="6">
+                    </div>
+                    <div>
+                      <label class="form-label seccionFormularioyHorarios__label">Apellido</label>
+                      <input class="form-control seccionFormularioyHorarios__input" type="text">
+                    </div>
+                    <div>
+                      <label class="form-label seccionFormularioyHorarios__label">Mail</label>
+                      <input class="form-control seccionFormularioyHorarios__input" type="email">
+                    </div>
+                    <div>
+                      <label class="form-label seccionFormularioyHorarios__label">Telefono</label>
+                      <input class="form-control seccionFormularioyHorarios__input" type="number">
+                    </div>
+                    <div>
+                      <label class="form-label seccionFormularioyHorarios__label">Comentario</label>
+                      <textarea class="form-control seccionFormularioyHorarios__textArea" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+              </article>
+              
+              <!-- Fin article con formulario -->
 
-            <!-- Inicio article con horarios de atencion y numero de telefono -->
-                <article class="col-md-6 m-auto">
-                    <h4 class="p-2">Nuestros horarios de atencion:</h4>
-                    <h6 class="p-2">Lunes a jueves:</h6>
-                    <p class="p-2">8:30hs a 13hs</p>
-                    <h6 class="p-2">Viernes y sabados</h6>
-                    <p class="p-2">8:30hs a 13hs</p>
-                    <p class="p-2">y 17hs a 21hs</p>
-                    <p class="p-2">Recorda que tambien podes hacer pedidos al siguiente numero:</p>
-                    <p class="p-2">03794689426</p>
-                </article>
-            <!-- Fin article -->
+              <!-- Inicio article con horarios de atencion y numero de telefono -->
+              <article>
+                <img src="../img/imagenesParaContacto/horariosKurepa.jpg" alt="kurepa-horarios">
+              </article>
+              <!-- Fin article -->
+          </section>
         </section>
         <!-- Fin seccion formulario y horarios de atencion -->
 
