@@ -1,6 +1,25 @@
 footer{
     background-color: map-get($colores, azul);
+    .redes{
+        article{
+            h5{
+                font-size: map-get($textos, text-semi-large);
+                color: map-get($colores, negro);
+            }
+            .redes__links{
+                img{
+                    width: 60px;
+                    height: 60px;
+                }
+                
+            }
+        }
+        padding: 1rem;
+        border-bottom: 2px solid map-get($colores, azul-secondary);
+        
+    }
     .esloganUbicacionMenu{
+        padding: 1rem;
         @include flex(row, space-evenly, center, 0);
         &__titulo{
             font-size: map-get($textos, text-semi-large);
