@@ -1,5 +1,13 @@
 .mainSobreNosotros{
-    background-color: map-get($colores, amarillo);
+    .contenedorGaleriaElaboracionChipaSoo{
+        background: linear-gradient(
+                            to bottom,
+                            map-get($colores, amarillo) 0%,
+                            map-get($colores, amarillo) 50%,
+                            map-get($colores, rojo) 50%,
+                            map-get($colores, rojo) 100%
+                );
+    }
     .galeriaElaboracionChipaSoo{
         @include grid(repeat(12, 1fr), 1fr, center, center, 1rem);
         &__article1{

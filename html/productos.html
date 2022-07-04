@@ -16,7 +16,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navMobile mx-4">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="./img/svg/Kurepa_logo.svg" alt="kurepa-logo"></a>
+              <a class="navbar-brand" href="../index.html"><img src="../img/svg/Kurepa_logo.svg" alt="kurepa-logo"></a>
               <button class="navbar-toggler rounded-circle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #e17c2c;">
                 <span class="navbar-toggler-icon" ></span>
               </button>
@@ -44,7 +44,7 @@
           <nav class="navDesktop mx-5">
             <div>
                 <a href="../index.html">
-                    <img src="./img/svg/Kurepa_logo.svg" alt="kurepa_logo.svg">
+                    <img src="../img/svg/Kurepa_logo.svg" alt="kurepa_logo.svg">
                 </a>
             </div>
             <div >
@@ -70,53 +70,49 @@
     </header> 
     <!-- Fin HEADER -->
 
-    <!-- Inicio seccion menu -->
-        <section class="menu">
-            <div class="text-center">
-                <h2>Menu:</h2>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center align-self-center container">
-                    <article class="col-xl-4 col-md-6 text-center mb-3">
-                        <img class="imagen-de-producto" src="../img/chipaguazu.jpg" alt="chipa-guazu">
-                        <h4>Chipá guazú</h4>
-                        <p>Choclo, productos lácteos, cebolla, huevo y sal</p>
-                    </article>
-                    <article class="col-xl-4 col-md-6 text-center mb-3">
-                        <img class="imagen-de-producto" src="../img/chipamestizo.jpg" alt="chipa-mestizo">
-                        <h4>Chipá mestizo</h4>
-                        <p>Almidon de mandioca, harina de maiz, productos lácteos, huevo, anis y sal</p>
-                    </article>
-                    <article class="col-xl-4 col-md-6 text-center mb-3">
-                        <img class="imagen-de-producto" src="../img/Chipasoo.jpg" alt="chipa-soo">
-                        <h4>Chipá So'o</h4>
-                        <p>Almidon de mandioca, harina de maiz, productos lácteos, huevo y sal <b>*Rellenas:</b> carne, cebolla y queso o jamon y queso</p>
-                    </article>
-                    <article class="col-xl-4 col-md-6 text-center mb-3">
-                        <img class="imagen-de-producto" src="../img/mbeju.jpg" alt="mbeju">
-                        <h4>Mbeju precocido tradicional</h4>
-                        <p>Harina de almidón, harina de maiz, productos lácteos, sal <b>Saborizados:</b> Provenzal o picante (contiene aji molido, condimento para pizza y Pimenton) </p>
-                    </article>
-                    <article class="col-xl-4 col-md-6 text-center mb-3">
-                        <img class="imagen-de-producto" src="../img/sopaparaguaya.jpg" alt="sopa-paraguaya">
-                        <h4>Sopa paraguaya</h4>
-                        <p>Harina de maiz, productos lácteos, cebolla, aceite, huevo y sal</p>
-                    </article>
-                    <article class="col-xl-4 col-md-6 text-center mb-3">
-                        <img class="imagen-de-producto" src="../img/mbejusaborizado.jpg" alt="mbeju-saborizado">
-                        <h4>Sopa paraguaya tres cebollas</h4>
-                        <p>Harina de maiz, productos lácteos, cebolla comun, cebolla morada, cebolla de verdeo, aceite, huevo y sal</p>
-                    </article>
-                    <article class="col-xl-4 col-md-6 text-center mb-3">
-                        <img class="imagen-de-producto" src="../img/mbejusaborizado.jpg" alt="mbeju-saborizado">
-                        <h4>Sopa paraguaya cuatro quesos</h4>
-                        <p>Harina de maiz, productos lácteos, cebolla, aceite, sal, huevo, queso pategrás, dambo, roquefort y sardo</p>
-                    </article>
-                </div>
-            </div>
-            
+    <!-- Inicio seccion main menu -->
+    <section class="mainMenu">
+        <!-- Inicio seccion encabezado menu -->
+        <section class="encabezadoMenu text-center"> 
+            <img src="../img/imagenesProductos/gatoAmasando.gif" alt="gato">
+            <h2 class="m-5">Menu</h2>
         </section>
+        <!-- fin seccion encabezado menu -->
+    
+        <!-- Inicio seccion menu -->
+        <section class="contenedorMenu">
+            <section class="menu container p-4">
+                <article class="menu__article1  ">
+                    <img class="menu__article1__comida" src="../img/imagenesProductos/ChipaMestizo.jpg" alt="chipa">
+                    <img class="menu__article1__paquete" src="../img/imagenesProductos/ImagenPaqueteChipaMestizo.jpg" alt="chipa">
+                    <div class="menu__article1__texto menu__texto">
+                        <h3>Chipa mestizo</h3>
+                        <p>Almidon de mandioca, harina de maiz, productos lácteos, huevo, anis y sal</p>
+                    </div>
+                </article>
+                <article class="menu__article2 ">
+                    <img class="menu__article2__paquete " src="../img/imagenesProductos/ImagenPaqueteMbeju.jpg" alt="mbeju">
+                    <img class="menu__article2__comida" src="../img/imagenesProductos/ImagenMbeju.jpg" alt="mbeju">            
+                    <div class="menu__texto menu__article2__texto">
+                        <h3 class="text-end">Mbeju precocido tradicional</h3>
+                        <p class="text-end">Harina de almidón, harina de maiz, productos lácteos, sal Saborizados: Provenzal o picante (contiene aji molido, condimento para pizza y Pimenton)</p>
+                    </div>
+                </article>
+                <article class="menu__article3">
+                    <img class="menu__article3__comida" src="../img/imagenesProductos/SopaParaguaya.jpg" alt="sopa-paraguaya">
+                    <img class="menu__article3__paquete" src="../img/imagenesProductos/ImagenPaqueteSopaParaguaya.jpg" alt="sopa-paraguaya">
+                    <div class="menu__texto menu__article3__texto">
+                        <h3>Sopa paraguaya</h3>
+                        <p>Harina de maiz, productos lácteos, cebolla, aceite, huevo y sal</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+        
         <!-- Fin seccion menu -->
+    </section>
+    <!-- Fin seccion main menu -->
+    
     
     <!-- Inicio FOOTER -->
     <footer class="py-5">

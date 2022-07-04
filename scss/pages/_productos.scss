@@ -1,0 +1,132 @@
+.mainMenu{
+    background-color: map-get($colores, amarillo);
+    .encabezadoMenu{
+        background: linear-gradient(
+                            to bottom,
+                            #FEF2E6 0%,
+                            #FEF2E6 50%,
+                            map-get($colores, amarillo) 50%,
+                            map-get($colores, amarillo) 100%
+                );
+        h2{
+            font-size:map-get($textos, text-semi-large);
+        }
+    }
+    .contenedorMenu{
+        background-color: map-get($colores, amarillo);
+        .menu{
+            h3{
+                font-size: map-get($textos, text-semi-large );
+            }
+            p{
+                font-size: map-get($textos, text-medium);
+            }
+            &__texto{
+                color:map-get($colores, gris);
+                background-color: map-get($colores, negro);
+            }
+            @include flex(column, center, center, 3.5rem);
+            &__article1{
+                @include grid(repeat(10, 1fr), repeat(10, 34px), center, center, 1rem);  
+                &__comida{
+                    grid-column-start: 1;
+                    grid-column-end:8;
+                    grid-row-start: 1;
+                    grid-row-end: 8;
+                    z-index: 1;
+                }
+                &__paquete{
+                    grid-column-start: 8;
+                    grid-column-end: 11;
+                    grid-row-start: 1;
+                    grid-row-end: 8;
+                    height: 380px;
+                    z-index: 3;
+                }
+                &__texto{
+                    grid-column-start: 2;
+                    grid-column-end: 11;
+                    grid-row-start: 7;
+                    grid-row-end: 11; 
+                    height: 167px;
+                    width: 920px;
+                    z-index: 2;
+                    p{
+                        padding: 4.7rem 1rem;
+
+                    }
+                } 
+            }
+            &__article2{
+                @include grid(repeat(10, 1fr), repeat(11, 34px), center, center, 1rem);  
+                &__comida{
+                    grid-column-start: 4;
+                    grid-column-end:11;
+                    grid-row-start: 1;
+                    grid-row-end: 8;
+                    z-index: 1;
+                }
+                &__paquete{
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 8;
+                    height: 380px;
+                    width: 280px;
+                    z-index: 3;
+                    justify-self: end;
+                }
+                &__texto{
+                    grid-column-start: 2;
+                    grid-column-end: 11;
+                    grid-row-start: 7;
+                    grid-row-end: 11; 
+                    height: 210px;
+                    width: 900px;
+                    z-index: 2;
+                    p{
+                        padding: 4.7rem 0.4rem;
+
+                    }
+                } 
+                
+            }
+            &__article3{
+                @include grid(repeat(10, 1fr), repeat(10, 34px), center, center, 1rem);
+                &__comida{
+                    grid-column-start: 1;
+                    grid-column-end:8;
+                    grid-row-start: 1;
+                    grid-row-end: 8;
+                    z-index: 1;
+                }
+                &__paquete{
+                    grid-column-start: 8;
+                    grid-column-end: 11;
+                    grid-row-start: 1;
+                    grid-row-end: 8;
+                    height: 380px;
+                    z-index: 3;
+                }
+                &__texto{
+                    grid-column-start: 2;
+                    grid-column-end: 11;
+                    grid-row-start: 7;
+                    grid-row-end: 11; 
+                    height: 167px;
+                    width: 920px;
+                    z-index: 2;
+                    p{
+                        padding: 4.7rem 1rem;
+
+                    }
+                    h3{
+                        padding:1.2rem 1rem;
+                    }
+                } 
+            }
+                
+            }
+
+        }
+    }

@@ -5,20 +5,30 @@
     src: url("../fonts/BRUSHER.TTF");
   };
 /* Misc */
+/* variables */
 @import './misc/variables';
+/* mixins */
 @import './misc/mixins';
+/* normalize */
 @import './misc/normalize';
 
 /* partials */
+/* header */
 @import './partials/header';
+/* footer */
 @import './partials/footer';
 
 /* pages */
+/* contacto */
 @import './pages/contacto';
+/* home */
 @import './pages/home';
+/* productos */
 @import './pages/productos';
+/* puntos de venta */
 @import './pages/puntos-de-ventas';
+/* sobre nosotros */
 @import './pages/sobre-nosotros';
 
-/* Misc media-querys*/
+/* media-querys*/
 @import './misc/mediaquery';
