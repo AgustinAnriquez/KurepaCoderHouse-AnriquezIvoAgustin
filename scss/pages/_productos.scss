@@ -40,7 +40,7 @@
                     grid-column-end: 11;
                     grid-row-start: 1;
                     grid-row-end: 8;
-                    height: 380px;
+                    height: 350px;
                     z-index: 3;
                 }
                 &__texto{
@@ -52,7 +52,7 @@
                     width: 920px;
                     z-index: 2;
                     p{
-                        padding: 4.7rem 1rem;
+                        padding: 4rem 1rem;
 
                     }
                 } 
@@ -71,14 +71,14 @@
                     grid-column-end: 4;
                     grid-row-start: 1;
                     grid-row-end: 8;
-                    height: 380px;
-                    width: 280px;
+                    height: 350px;
+                    width: 250px;
                     z-index: 3;
                     justify-self: end;
                 }
                 &__texto{
-                    grid-column-start: 2;
-                    grid-column-end: 11;
+                    grid-column-start: 1;
+                    grid-column-end: 10;
                     grid-row-start: 7;
                     grid-row-end: 11; 
                     height: 210px;
@@ -105,7 +105,7 @@
                     grid-column-end: 11;
                     grid-row-start: 1;
                     grid-row-end: 8;
-                    height: 380px;
+                    height: 350px;
                     z-index: 3;
                 }
                 &__texto{
@@ -117,7 +117,7 @@
                     width: 920px;
                     z-index: 2;
                     p{
-                        padding: 4.7rem 1rem;
+                        padding: 2rem 1rem;
 
                     }
                     h3{
@@ -129,4 +129,47 @@
             }
 
         }
+        .contenedorPreparacion{
+            background: linear-gradient(
+                            to bottom,
+                            map-get($colores, amarillo) 0%,
+                            map-get($colores, amarillo) 50%,
+                            #FEF2E6 50%,
+                            #FEF2E6 100%,
+                );
+                h3{
+                    font-size:map-get($textos, text-semi-large);
+                }
+            .preparacion{
+                @include grid(repeat(12, 1fr), repeat(2, 1fr), center, center, 1rem);
+                img{
+                    width: 100%;
+                }
+                &__article1{
+                    grid-column-start: 1;
+                    grid-column-end: 7;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
+                &__article2{
+                    grid-column-start: 7;
+                    grid-column-end: 13;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
+                &__article3{
+                    grid-column-start: 1;
+                    grid-column-end: 7;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+                &__article4{
+                    grid-column-start: 7;
+                    grid-column-end: 13;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+            }    
+        }
+
     }
